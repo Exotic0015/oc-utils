@@ -6,7 +6,16 @@ if args[1] == nil then
     for i, v in component.list() do
         --print(cnt, i, v)
 		--print(gpu.setForeground("0x2E86C1") .. cnt)
-		print(gpu.setForeground(0x2E86C1) .. cnt, gpu.setForeground(0x2EC173) .. i, gpu.setForeground(0xFFFFFF) .. v)
+		--print(gpu.setForeground(0x2E86C1) .. cnt, gpu.setForeground(0x2EC173) .. i, gpu.setForeground(0xFFFFFF) .. v)
+		gpu.setForeground(0x2E86C1)
+		io.write(cnt .. "\t")
+		--print(cnt)
+		gpu.setForeground(0x2EC173)
+		io.write(i .. "\t")
+		--print(i)
+		gpu.setForeground(0xFFFFFF)
+		io.write(v .. "\n")
+		--print(v)
         cnt = cnt + 1
     end
 else
