@@ -21,7 +21,7 @@ else
                 gpu.setForeground(0x2E86C1)
                 io.write(a .. " ")
                 gpu.setForeground(0x2EC173)
-				print(b)
+                print(b)
                 gpu.setForeground(0xFFFFFF)
             end
         end
