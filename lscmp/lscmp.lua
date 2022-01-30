@@ -1,9 +1,12 @@
 local component = require("component")
+local gpu = require("gpu")
 local args, _ = require("shell").parse(...)
 if args[1] == nil then
     local cnt = 1
     for i, v in component.list() do
-        print(cnt, i, v)
+        --print(cnt, i, v)
+		--print(gpu.setForeground("0x2E86C1") .. cnt)
+		print(gpu.setForeground(0x2E86C1) .. cnt, gpu.setForeground(0x2EC173) .. i, gpu.setForeground(0xFFFFFF) .. v)
         cnt = cnt + 1
     end
 else
