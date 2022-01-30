@@ -1,5 +1,5 @@
 local component = require("component")
-local gpu = require("gpu")
+local gpu = component.gpu
 local args, _ = require("shell").parse(...)
 if args[1] == nil then
     local cnt = 1
